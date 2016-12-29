@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  
+	<title>Proyecto</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    
+    <meta charset="utf-8">
+    <script src='http://code.jquery.com/jquery-latest.js'></script>
+
+     <script type="text/javascript">
+     	$(document).ready(function(){
+     		$('section[data-type="parallax-secction"]').each(function(){
+     			var $bgpbj = $(this);
+     			$(window).scroll(function(){
+     				$window = $(window);
+     				var yPos = -($windows.scrollTop()/$bgobj.data('speed'));
+     				var coords = '50%' + yPos + 'px';
+     				$bgobj.css({backgroundPosition:coords});
+     			});
+     		});  
+     	});
+     </script>
+</head>
+
+<body>
+
+       <section id="gallery" data-type="parallax-secction" data-speed="10"> 
+         
+                 <article >
+
+         	             <div class="parallax">
+         	      	        <div id="galerymoble">
+         	      	        <script src="galeria.js"></script>
+                            </div>
+                          
+         	             </div><!--fin de div -->
+
+                 </article> <!--fin de article -->
+
+       </section> <!--fin de secction gallery-->
+
+       <section id="banner" data-type="parallax-secction" data-speed="10">
+         
+                 <article >
+
+         	             <div class="parallax">
+         	      	
+
+         	             </div><!--fin de div -->
+
+                 </article> <!--fin de article -->
+
+       </section> <!--fin de secction banner-->
+
+       <section id="comment" data-type="parallax-secction" data-speed="10">
+         
+                 <article >
+
+         	             <div class="parallax">
+         	      	
+
+         	             </div><!--fin de div -->
+
+                 </article> <!--fin de article -->
+
+        </section> <!--fin de secction comment-->
+
+</body>
+
+</html>
